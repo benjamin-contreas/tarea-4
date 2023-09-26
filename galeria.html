@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea 4</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+    <div class="nav-container">
+        <!-- Add text alongside the navbar -->
+        <div class="text">
+            <b>Benjamin Contreras</b>
+        </div>
+        <nav class="nav-bar">
+            <a href="/index.html">Inicio</a>
+            <a href="/galeria.html">Galeria</a>
+            <a href="/formulario.html">Contacto</a>
+            <a href="#">Sobre Mi</a>
+            <a href="#">Calculadora</a>
+        </nav>
+    </div>
+    <header class="title">
+        <h1>Galería de Fotos</h1>
+    </header>
+
+    <section class="gallery-container">
+        <!-- Gallery Item 1 -->
+        <div class="gallery-item" onclick="expandImage('/img/foto-fondo-benja.jpg')">
+            <img src="/img/foto-fondo-benja.jpg" alt="Image 1">
+        </div>
+
+        <!-- Gallery Item 2 -->
+        <div class="gallery-item" onclick="expandImage('/img/foto-voluntario-benja.jpg')">
+            <img src="/img/foto-voluntario-benja.jpg" alt="Image 2">
+        </div>
+
+        <!-- Gallery Item 3 -->
+        <div class="gallery-item" onclick="expandImage('/img/foto_portada_benja.jpg')">
+            <img src="/img/foto_portada_benja.jpg" alt="Image 3">
+        </div>
+
+        <!-- Gallery Item 4 -->
+        <div class="gallery-item" onclick="expandImage('/img/foto-voluntario-benja.jpg')">
+            <img src="/img/foto-voluntario-benja.jpg" alt="Image 4">
+        </div>
+
+        <!-- Gallery Item 5 -->
+        <div class="gallery-item" onclick="expandImage('/img/foto-fondo-benja.jpg')">
+            <img src="/img/foto-fondo-benja.jpg" alt="Image 5">
+        </div>
+
+        <!-- Gallery Item 6 -->
+        <div class="gallery-item" onclick="expandImage('/img/foto_portada_benja.jpg')">
+            <img src="/img/foto_portada_benja.jpg" alt="Image 6">
+        </div>
+    </section>
+
+    <div class="image-overlay" id="expanded-image-overlay" onclick="closeExpandedImage()">
+        <img src="" alt="" class="expanded-image" id="expanded-image">
+    </div>
+
+    <script src="/js/galeria.js"></script>
+</body>
+</html>
+```
+
